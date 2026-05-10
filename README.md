@@ -1,3 +1,5 @@
+-        `Weighted average accuracy: ≈ 96–97%`
+
 🇺🇸 EN
 Braille table for the Japanese language.
 This library is built on top of BrailleBase.
