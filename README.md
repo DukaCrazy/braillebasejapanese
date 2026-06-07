@@ -1,51 +1,22 @@
--        `Weighted average accuracy: ≈ 96–97%`
 
-🇺🇸 EN
-Braille table for the Japanese language.
-This library is built on top of BrailleBase.
-The current version accepts keys (characters) composed of only one Japanese character, while the values (braille cells) may contain as many cells as needed.
-Note:
-Combinations that form yōon — such as きゃ, きゅ, きょ, ひゃ, ひゅ, ひょ, ぴゃ, ぴゅ, ぴょ — are written in Japanese using two characters (for example: ひ + ゃ = ひゃ).
-Since the current version only accepts single‑character keys, these combinations are interpreted separately.
-For example, when processing ひゃ, the library outputs:
-- ひ
-- ゃ (small や)
-instead of recognizing ひゃ as a single combined syllable.
 
-🇯🇵 JP
-日本語点字のテーブルです。
-このライブラリは BrailleBase を基盤として動作しています。
-現行バージョンでは、キー（文字）は 1 文字のみ登録でき、
-値（点字）は必要なだけ複数セルを登録できます。
-注意：
-拗音（きゃ・きゅ・きょ、ひゃ・ひゅ・ひょ、ぴゃ・ぴゅ・ぴょ など）は、
-本来 2 文字の組み合わせ（例：ひ + ゃ = ひゃ）で 1 音を表します。
-しかし現行バージョンではキーが 1 文字しか登録できないため、
-「ひゃ」は次のように別々に処理されます：
-- ひ
-- ゃ（小さいや）
-つまり、ひゃ として 1 つの音にまとめることができません。
+## Pre-registered Letters and Characters
+- あ, い, う, え, お, か, き, く, け, こ, さ, し, す, せ, そ, た, ち, つ, て, と, な, に, ぬ, ね, の, は, ひ, ふ, へ, ほ, ま, み, む, め, も, や, ゆ, よ, ら, り, る, れ, ろ, わ, ゐ, ゑ, を, ん
 
-🇮🇹 IT
-Tabella Braille per la lingua giapponese.
-Questa libreria utilizza BrailleBase come struttura principale.
-L’attuale versione accetta chiavi composte da un solo carattere giapponese, mentre i valori (celle braille) possono contenere tutte le celle necessarie.
-Nota:
-Le combinazioni che formano gli yōon — come きゃ, きゅ, きょ, ひゃ, ひゅ, ひょ, ぴゃ, ぴゅ, ぴょ — sono scritte in giapponese usando due caratteri (ad esempio: ひ + ゃ = ひゃ).
-Poiché l’attuale versione accetta solo chiavi di un singolo carattere, queste combinazioni vengono interpretate separatamente.
-Ad esempio, elaborando ひゃ, la libreria restituisce:
-- ひ
-- ゃ（や piccola）
-invece di riconoscere ひゃ come una sola sillaba composta.
+- が, ぎ, ぐ, げ, ご, ざ, じ, ず, ぜ, ぞ, だ, ぢ, づ, で, ど, ば, び, ぶ, べ, ぼ, ぱ, ぴ, ぷ, ぺ, ぽ
 
-🇧🇷 PT
-Tabela de Braille para a língua japonesa.
-Esta biblioteca utiliza o BrailleBase como base estrutural.
-A versão atual aceita chaves formadas por apenas um caractere japonês, enquanto os valores (brailles) podem conter quantas células forem necessárias.
-Observação:
-As combinações que formam yōon — como きゃ, きゅ, きょ, ひゃ, ひゅ, ひょ, ぴゃ, ぴゅ, ぴょ — são representadas no japonês por dois caracteres (por exemplo: ひ + ゃ = ひゃ).
-Como a versão atual só aceita chaves de um único caractere, essas combinações são interpretadas separadamente.
-Por exemplo, ao processar ひゃ, a biblioteca retorna:
-- ひ
-- ゃ（や pequena）
-em vez de reconhecer ひゃ como uma única unidade fonética.
+- きゃ, きゅ, きょ, ぎゃ, ぎゅ, ぎょ, しゃ, しゅ, しょ, じゃ, じゅ, じょ, ちゃ, ちゅ, ちょ, ぢゃ, ぢゅ, ぢょ, にゃ, にゅ, にょ, ひゃ, ひゅ, ひょ, びゃ, びゅ, びょ, ぴゃ, ぴゅ, ぴょ, みゃ, みゅ, みょ, りゃ, りゅ, りょ
+
+- っ, ー
+
+- ア, イ, ウ, エ, オ, カ, キ, ク, ケ, コ, サ, シ, ス, セ, ソ, タ, チ, ツ, テ, ト, ナ, ニ, ヌ, ネ, ノ, ハ, ヒ, フ, ヘ, ホ, マ, ミ, ム, メ, モ, ヤ, ユ, ヨ, ラ, リ, ル, レ, ロ, ワ, ヰ, ヱ, ヲ, ン
+
+- ガ, ギ, グ, ゲ, ゴ, ザ, ジ, ズ, ゼ, ゾ, ダ, ヂ, ヅ, デ, ド, バ, ビ, ブ, ベ, ボ, パ, ピ, プ, ペ, ポ
+
+- キャ, キュ, キョ, ギャ, ギュ, ギョ, シャ, シュ, ショ, ジャ, ジュ, ジョ, チャ, チュ, チョ, ヂャ, ヂュ, ヂョ, ニャ, ニュ, ニョ, ヒャ, ヒュ, ヒョ, ビャ, ビュ, ビョ, ピャ, ピュ, ピョ, ミャ, ミュ, ミョ, リャ, リュ, リョ
+
+- イェ, ウィ, ウェ, ウォ, キェ, クァ, クィ, クェ, クォ, グァ, グィ, グェ, グォ, シェ, ジェ, スィ, ズィ, チェ, ツァ, ツィ, ツェ, ツォ, ティ, ディ, テュ, デュ, トゥ, ドゥ, ニェ, ヒェ, ファ, フィ, フェ, フォ, フュ, フョ, ヴァ, ヴィ, ヴェ, ヴォ, ヴュ, ヴョ, ヴ
+
+- ッ
+
+- 。, 、, ？, ！, ・, ?, !, ―, …, 「, 」, 『, 』, ～, (, ), ((, )), →, ←, ○, △, □, ×, ％, ＆, ＠, ＃, ＊, @, -, ., /, :, _, ~
