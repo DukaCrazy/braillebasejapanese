@@ -1,5 +1,5 @@
-## 2026/06/07 — Version 0.0.5 Summary
-- braillebase 0.0.11
+## 2026/06/07 — Version 0.0.6 Summary
+- braillebase 0.0.12
 - Pre-registered Letters and Characters
 
 ## 2026/05/13 — Version 0.0.3 Summary
