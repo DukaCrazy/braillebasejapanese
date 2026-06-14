@@ -1,4 +1,4 @@
-from braillebase import BrailleBase
+from braillebase import *
 
 class BrailleBaseJapanese(BrailleBase):
     def __init__(self):
@@ -27,409 +27,413 @@ class BrailleBaseJapanese(BrailleBase):
         """
         super().__init__()
         #ひ
-        self.append_braille_letter("あ", ["⠁"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("い", ["⠃"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("う", ["⠉"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("え", ["⠋"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("お", ["⠊"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("か", ["⠡"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("き", ["⠣"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("く", ["⠩"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("け", ["⠫"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("こ", ["⠪"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("さ", ["⠱"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("し", ["⠳"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("す", ["⠹"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("せ", ["⠻"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("そ", ["⠺"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("た", ["⠕"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ち", ["⠗"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("つ", ["⠝"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("て", ["⠟"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("と", ["⠞"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("な", ["⠅"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("に", ["⠇"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぬ", ["⠍"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ね", ["⠏"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("の", ["⠎"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("は", ["⠥"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ひ", ["⠧"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ふ", ["⠭"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("へ", ["⠯"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ほ", ["⠮"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ま", ["⠵"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("み", ["⠷"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("む", ["⠽"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("め", ["⠿"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("も", ["⠾"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("や", ["⠌"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ゆ", ["⠬"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("よ", ["⠜"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ら", ["⠑"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("り", ["⠓"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("る", ["⠙"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("れ", ["⠛"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ろ", ["⠚"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("わ", ["⠄"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ゐ", ["⠰"]) #2026/05/30
-        self.append_braille_letter("ゑ", ["⠲"]) #2026/05/30
-        self.append_braille_letter("を", ["⠔"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ん", ["⠴"]) #2026/05/18 #2026/05/18
+        self.setting_braille_rules01("⠠", "⠠") #2026/06/08
+
+        self.append_special_braille_lettr_rules_CJK("あ", ["⠁"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("い", ["⠃"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("う", ["⠉"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("え", ["⠋"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("お", ["⠊"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("か", ["⠡"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("き", ["⠣"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("く", ["⠩"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("け", ["⠫"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("こ", ["⠪"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("さ", ["⠱"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("し", ["⠳"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("す", ["⠹"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("せ", ["⠻"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("そ", ["⠺"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("た", ["⠕"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ち", ["⠗"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("つ", ["⠝"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("て", ["⠟"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("と", ["⠞"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("な", ["⠅"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("に", ["⠇"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぬ", ["⠍"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ね", ["⠏"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("の", ["⠎"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("は", ["⠥"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ひ", ["⠧"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ふ", ["⠭"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("へ", ["⠯"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ほ", ["⠮"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ま", ["⠵"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("み", ["⠷"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("む", ["⠽"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("め", ["⠿"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("も", ["⠾"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("や", ["⠌"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ゆ", ["⠬"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("よ", ["⠜"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ら", ["⠑"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("り", ["⠓"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("る", ["⠙"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("れ", ["⠛"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ろ", ["⠚"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("わ", ["⠄"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ゐ", ["⠰"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ゑ", ["⠲"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("を", ["⠔"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ん", ["⠴"]) #2026/05/18 #2026/05/18
         # 濁音
-        self.append_braille_letter("が", ["⠐", "⠡"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぎ", ["⠐", "⠣"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぐ", ["⠐", "⠩"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("げ", ["⠐", "⠫"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ご", ["⠐", "⠪"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("が", ["⠐", "⠡"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぎ", ["⠐", "⠣"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぐ", ["⠐", "⠩"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("げ", ["⠐", "⠫"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ご", ["⠐", "⠪"]) #2026/05/18 #2026/05/18
 
-        self.append_braille_letter("ざ", ["⠐", "⠱"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("じ", ["⠐", "⠳"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ず", ["⠐", "⠹"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぜ", ["⠐", "⠻"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぞ", ["⠐", "⠺"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ざ", ["⠐", "⠱"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("じ", ["⠐", "⠳"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ず", ["⠐", "⠹"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぜ", ["⠐", "⠻"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぞ", ["⠐", "⠺"]) #2026/05/18 #2026/05/18
 
-        self.append_braille_letter("だ", ["⠐", "⠕"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぢ", ["⠐", "⠗"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("づ", ["⠐", "⠝"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("で", ["⠐", "⠟"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ど", ["⠐", "⠞"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("だ", ["⠐", "⠕"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぢ", ["⠐", "⠗"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("づ", ["⠐", "⠝"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("で", ["⠐", "⠟"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ど", ["⠐", "⠞"]) #2026/05/18 #2026/05/18
 
-        self.append_braille_letter("ば", ["⠐", "⠥"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("び", ["⠐", "⠧"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぶ", ["⠐", "⠭"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("べ", ["⠐", "⠯"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぼ", ["⠐", "⠮"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ば", ["⠐", "⠥"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("び", ["⠐", "⠧"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぶ", ["⠐", "⠭"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("べ", ["⠐", "⠯"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぼ", ["⠐", "⠮"]) #2026/05/18 #2026/05/18
         # 半濁音
-        self.append_braille_letter("ぱ", ["⠠", "⠥"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぴ", ["⠠", "⠧"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぷ", ["⠠", "⠭"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぺ", ["⠠", "⠯"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぽ", ["⠠", "⠮"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぱ", ["⠠", "⠥"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぴ", ["⠠", "⠧"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぷ", ["⠠", "⠭"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぺ", ["⠠", "⠯"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぽ", ["⠠", "⠮"]) #2026/05/18 #2026/05/18
         #拗音
         # きゃ きゅ きょ / ぎゃ ぎゅ ぎょ
-        self.append_braille_letter("きゃ", ["⠈", "⠡"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("きゅ", ["⠈", "⠩"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("きょ", ["⠈", "⠪"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("きゃ", ["⠈", "⠡"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("きゅ", ["⠈", "⠩"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("きょ", ["⠈", "⠪"]) #2026/05/18 #2026/05/18
 
-        self.append_braille_letter("ぎゃ", ["⠘", "⠡"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぎゅ", ["⠘", "⠩"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぎょ", ["⠘", "⠪"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぎゃ", ["⠘", "⠡"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぎゅ", ["⠘", "⠩"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぎょ", ["⠘", "⠪"]) #2026/05/18 #2026/05/18
 
         # しゃ しゅ しょ / じゃ じゅ じょ
-        self.append_braille_letter("しゃ", ["⠈", "⠱"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("しゅ", ["⠈", "⠹"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("しょ", ["⠈", "⠺"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("しゃ", ["⠈", "⠱"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("しゅ", ["⠈", "⠹"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("しょ", ["⠈", "⠺"]) #2026/05/18 #2026/05/18
 
-        self.append_braille_letter("じゃ", ["⠘", "⠱"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("じゅ", ["⠘", "⠹"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("じょ", ["⠘", "⠺"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("じゃ", ["⠘", "⠱"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("じゅ", ["⠘", "⠹"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("じょ", ["⠘", "⠺"]) #2026/05/18 #2026/05/18
 
         # ちゃ ちゅ ちょ / ぢゃ ぢゅ ぢょ
-        self.append_braille_letter("ちゃ", ["⠈", "⠕"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ちゅ", ["⠈", "⠝"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ちょ", ["⠈", "⠞"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ちゃ", ["⠈", "⠕"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ちゅ", ["⠈", "⠝"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ちょ", ["⠈", "⠞"]) #2026/05/18 #2026/05/18
 
-        self.append_braille_letter("ぢゃ", ["⠘", "⠕"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぢゅ", ["⠘", "⠝"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぢょ", ["⠘", "⠞"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぢゃ", ["⠘", "⠕"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぢゅ", ["⠘", "⠝"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぢょ", ["⠘", "⠞"]) #2026/05/18 #2026/05/18
 
         # にゃ にゅ にょ
-        self.append_braille_letter("にゃ", ["⠈", "⠅"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("にゅ", ["⠈", "⠍"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("にょ", ["⠈", "⠎"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("にゃ", ["⠈", "⠅"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("にゅ", ["⠈", "⠍"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("にょ", ["⠈", "⠎"]) #2026/05/18 #2026/05/18
 
         # ひゃ ひゅ ひょ / びゃ びゅ びょ / ぴゃ ぴゅ ぴょ
-        self.append_braille_letter("ひゃ", ["⠈", "⠥"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ひゅ", ["⠈", "⠭"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ひょ", ["⠈", "⠮"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ひゃ", ["⠈", "⠥"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ひゅ", ["⠈", "⠭"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ひょ", ["⠈", "⠮"]) #2026/05/18 #2026/05/18
 
-        self.append_braille_letter("びゃ", ["⠘", "⠥"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("びゅ", ["⠘", "⠭"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("びょ", ["⠘", "⠮"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("びゃ", ["⠘", "⠥"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("びゅ", ["⠘", "⠭"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("びょ", ["⠘", "⠮"]) #2026/05/18 #2026/05/18
 
-        self.append_braille_letter("ぴゃ", ["⠨", "⠥"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぴゅ", ["⠨", "⠭"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("ぴょ", ["⠨", "⠮"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぴゃ", ["⠨", "⠥"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぴゅ", ["⠨", "⠭"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ぴょ", ["⠨", "⠮"]) #2026/05/18 #2026/05/18
 
         # みゃ みゅ みょ
-        self.append_braille_letter("みゃ", ["⠈", "⠵"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("みゅ", ["⠈", "⠽"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("みょ", ["⠈", "⠾"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("みゃ", ["⠈", "⠵"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("みゅ", ["⠈", "⠽"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("みょ", ["⠈", "⠾"]) #2026/05/18 #2026/05/18
 
         # りゃ りゅ りょ
-        self.append_braille_letter("りゃ", ["⠈", "⠑"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("りゅ", ["⠈", "⠙"]) #2026/05/18 #2026/05/18
-        self.append_braille_letter("りょ", ["⠈", "⠚"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("りゃ", ["⠈", "⠑"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("りゅ", ["⠈", "⠙"]) #2026/05/18 #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("りょ", ["⠈", "⠚"]) #2026/05/18 #2026/05/18
 
-        self.append_braille_letter("ぁ", ["⠡"])
-        self.append_braille_letter("ぃ", ["⠣"])
-        self.append_braille_letter("ぅ", ["⠩"])
-        self.append_braille_letter("ぇ", ["⠫"])
-        self.append_braille_letter("ぉ", ["⠹"])
+        self.append_special_braille_lettr_rules_CJK("ぁ", ["⠡"])
+        self.append_special_braille_lettr_rules_CJK("ぃ", ["⠣"])
+        self.append_special_braille_lettr_rules_CJK("ぅ", ["⠩"])
+        self.append_special_braille_lettr_rules_CJK("ぇ", ["⠫"])
+        self.append_special_braille_lettr_rules_CJK("ぉ", ["⠹"])
 
-        self.append_braille_letter("ゃ", ["⠈"])
-        self.append_braille_letter("ゅ", ["⠊"])
-        self.append_braille_letter("ょ", ["⠌"])
+        self.append_special_braille_lettr_rules_CJK("ゃ", ["⠈"])
+        self.append_special_braille_lettr_rules_CJK("ゅ", ["⠊"])
+        self.append_special_braille_lettr_rules_CJK("ょ", ["⠌"])
         #促音
-        self.append_braille_letter("っ", ["⠂"]) #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("っ", ["⠂"]) #2026/05/18 2026/06/08
         #長音 
-        self.append_braille_letter("ー", ["⠒"]) #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("ー", ["⠒"]) #2026/05/18
 
         # カタカナ
-        self.append_special_braille_lettr_rules02("ア", ["⠁"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("イ", ["⠃"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ウ", ["⠉"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("エ", ["⠋"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("オ", ["⠊"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("カ", ["⠡"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("キ", ["⠣"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ク", ["⠩"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ケ", ["⠫"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("コ", ["⠪"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("サ", ["⠱"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("シ", ["⠳"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ス", ["⠹"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("セ", ["⠻"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ソ", ["⠺"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("タ", ["⠕"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("チ", ["⠗"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ツ", ["⠝"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("テ", ["⠟"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ト", ["⠞"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ナ", ["⠅"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ニ", ["⠇"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヌ", ["⠍"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ネ", ["⠏"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ノ", ["⠎"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ハ", ["⠥"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヒ", ["⠧"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("フ", ["⠭"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヘ", ["⠯"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ホ", ["⠮"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("マ", ["⠵"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ミ", ["⠷"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ム", ["⠽"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("メ", ["⠿"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("モ", ["⠾"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヤ", ["⠌"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ユ", ["⠬"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヨ", ["⠜"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ラ", ["⠑"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("リ", ["⠓"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ル", ["⠙"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("レ", ["⠛"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ロ", ["⠚"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ワ", ["⠄"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヰ", ["⠰"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヱ", ["⠲"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヲ", ["⠔"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ン", ["⠴"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ア", ["⠁"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("イ", ["⠃"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ウ", ["⠉"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("エ", ["⠋"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("オ", ["⠊"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("カ", ["⠡"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("キ", ["⠣"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ク", ["⠩"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ケ", ["⠫"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("コ", ["⠪"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("サ", ["⠱"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("シ", ["⠳"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ス", ["⠹"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("セ", ["⠻"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ソ", ["⠺"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("タ", ["⠕"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("チ", ["⠗"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ツ", ["⠝"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("テ", ["⠟"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ト", ["⠞"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ナ", ["⠅"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ニ", ["⠇"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヌ", ["⠍"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ネ", ["⠏"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ノ", ["⠎"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ハ", ["⠥"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヒ", ["⠧"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("フ", ["⠭"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヘ", ["⠯"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ホ", ["⠮"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("マ", ["⠵"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ミ", ["⠷"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ム", ["⠽"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("メ", ["⠿"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("モ", ["⠾"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヤ", ["⠌"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ユ", ["⠬"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヨ", ["⠜"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ラ", ["⠑"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("リ", ["⠓"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ル", ["⠙"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("レ", ["⠛"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ロ", ["⠚"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ワ", ["⠄"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヰ", ["⠰"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヱ", ["⠲"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヲ", ["⠔"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ン", ["⠴"]) #2026/05/30
         # カタカナ 濁音
-        self.append_special_braille_lettr_rules02("ガ", ["⠐", "⠡"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ギ", ["⠐", "⠣"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("グ", ["⠐", "⠩"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ゲ", ["⠐", "⠫"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ゴ", ["⠐", "⠪"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ザ", ["⠐", "⠱"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ジ", ["⠐", "⠳"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ズ", ["⠐", "⠹"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ゼ", ["⠐", "⠻"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ゾ", ["⠐", "⠺"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ダ", ["⠐", "⠕"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヂ", ["⠐", "⠗"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヅ", ["⠐", "⠝"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("デ", ["⠐", "⠟"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ド", ["⠐", "⠞"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("バ", ["⠐", "⠥"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ビ", ["⠐", "⠧"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ブ", ["⠐", "⠭"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ベ", ["⠐", "⠯"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ボ", ["⠐", "⠮"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ガ", ["⠐", "⠡"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ギ", ["⠐", "⠣"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("グ", ["⠐", "⠩"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ゲ", ["⠐", "⠫"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ゴ", ["⠐", "⠪"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ザ", ["⠐", "⠱"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ジ", ["⠐", "⠳"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ズ", ["⠐", "⠹"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ゼ", ["⠐", "⠻"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ゾ", ["⠐", "⠺"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ダ", ["⠐", "⠕"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヂ", ["⠐", "⠗"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヅ", ["⠐", "⠝"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("デ", ["⠐", "⠟"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ド", ["⠐", "⠞"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("バ", ["⠐", "⠥"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ビ", ["⠐", "⠧"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ブ", ["⠐", "⠭"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ベ", ["⠐", "⠯"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ボ", ["⠐", "⠮"]) #2026/05/30
         # カタカナ 半濁音
-        self.append_special_braille_lettr_rules02("パ", ["⠠", "⠥"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ピ", ["⠠", "⠧"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("プ", ["⠠", "⠭"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ペ", ["⠠", "⠯"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ポ", ["⠠", "⠮"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("パ", ["⠠", "⠥"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ピ", ["⠠", "⠧"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("プ", ["⠠", "⠭"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ペ", ["⠠", "⠯"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ポ", ["⠠", "⠮"]) #2026/05/30
         # カタカナ 拗音 (youon)
         # きゃ きゅ きょ / ぎゃ ぎゅ ぎょ
-        self.append_special_braille_lettr_rules02("キャ", ["⠈", "⠡"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("キュ", ["⠈", "⠩"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("キョ", ["⠈", "⠪"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("キャ", ["⠈", "⠡"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("キュ", ["⠈", "⠩"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("キョ", ["⠈", "⠪"]) #2026/05/30
 
-        self.append_special_braille_lettr_rules02("ギャ", ["⠘", "⠡"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ギュ", ["⠘", "⠩"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ギョ", ["⠘", "⠪"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ギャ", ["⠘", "⠡"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ギュ", ["⠘", "⠩"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ギョ", ["⠘", "⠪"]) #2026/05/30
         # しゃ しゅ しょ / じゃ じゅ じょ
-        self.append_special_braille_lettr_rules02("シャ", ["⠈", "⠱"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("シュ", ["⠈", "⠹"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ショ", ["⠈", "⠺"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("シャ", ["⠈", "⠱"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("シュ", ["⠈", "⠹"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ショ", ["⠈", "⠺"]) #2026/05/30
 
-        self.append_special_braille_lettr_rules02("ジャ", ["⠘", "⠱"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ジュ", ["⠘", "⠹"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ジョ", ["⠘", "⠺"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ジャ", ["⠘", "⠱"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ジュ", ["⠘", "⠹"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ジョ", ["⠘", "⠺"]) #2026/05/30
         # ちゃ ちゅ ちょ / ぢゃ ぢゅ ぢょ
-        self.append_special_braille_lettr_rules02("チャ", ["⠈", "⠕"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("チュ", ["⠈", "⠝"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("チョ", ["⠈", "⠞"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("チャ", ["⠈", "⠕"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("チュ", ["⠈", "⠝"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("チョ", ["⠈", "⠞"]) #2026/05/30
 
-        self.append_special_braille_lettr_rules02("ヂャ", ["⠘", "⠕"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヂュ", ["⠘", "⠝"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヂョ", ["⠘", "⠞"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヂャ", ["⠘", "⠕"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヂュ", ["⠘", "⠝"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヂョ", ["⠘", "⠞"]) #2026/05/30
         # にゃ にゅ にょ
-        self.append_special_braille_lettr_rules02("ニャ", ["⠈", "⠅"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ニュ", ["⠈", "⠍"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ニョ", ["⠈", "⠎"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ニャ", ["⠈", "⠅"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ニュ", ["⠈", "⠍"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ニョ", ["⠈", "⠎"]) #2026/05/30
         # ひゃ ひゅ ひょ / びゃ びゅ びょ / ぴゃ ぴゅ ぴょ
-        self.append_special_braille_lettr_rules02("ヒャ", ["⠈", "⠥"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヒュ", ["⠈", "⠭"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヒョ", ["⠈", "⠮"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヒャ", ["⠈", "⠥"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヒュ", ["⠈", "⠭"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヒョ", ["⠈", "⠮"]) #2026/05/30
 
-        self.append_special_braille_lettr_rules02("ビャ", ["⠘", "⠥"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ビュ", ["⠘", "⠭"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ビョ", ["⠘", "⠮"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ビャ", ["⠘", "⠥"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ビュ", ["⠘", "⠭"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ビョ", ["⠘", "⠮"]) #2026/05/30
 
-        self.append_special_braille_lettr_rules02("ピャ", ["⠨", "⠥"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ピュ", ["⠨", "⠭"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ピョ", ["⠨", "⠮"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ピャ", ["⠨", "⠥"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ピュ", ["⠨", "⠭"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ピョ", ["⠨", "⠮"]) #2026/05/30
         # みゃ みゅ みょ
-        self.append_special_braille_lettr_rules02("ミャ", ["⠈", "⠵"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ミュ", ["⠈", "⠽"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ミョ", ["⠈", "⠾"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ミャ", ["⠈", "⠵"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ミュ", ["⠈", "⠽"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ミョ", ["⠈", "⠾"]) #2026/05/30
         # りゃ りゅ りょ
-        self.append_special_braille_lettr_rules02("リャ", ["⠈", "⠑"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("リュ", ["⠈", "⠙"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("リョ", ["⠈", "⠚"]) #2026/05/30
-        #イ段 / ウ段 
-        self.append_special_braille_lettr_rules02("イェ", ["⠈", "⠋"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ウィ", ["⠢", "⠃"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ウェ", ["⠢", "⠋"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ウォ", ["⠢", "⠊"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("リャ", ["⠈", "⠑"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("リュ", ["⠈", "⠙"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("リョ", ["⠈", "⠚"]) #2026/05/30
+
+        #イ段 / ウ段 Special
+        self.append_special_braille_lettr_rules_CJK("イェ", ["⠈", "⠋"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ウィ", ["⠢", "⠃"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ウェ", ["⠢", "⠋"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ウォ", ["⠢", "⠊"]) #2026/05/30 2026/06/08
         #キ系
-        self.append_special_braille_lettr_rules02("キェ", ["⠈", "⠫"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("キェ", ["⠈", "⠫"]) #2026/05/30 2026/06/08
         #ク系 / グ系
-        self.append_special_braille_lettr_rules02("クァ", ["⠢", "⠡"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("クィ", ["⠢", "⠣"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("クェ", ["⠢", "⠫"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("クォ", ["⠢", "⠪"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("クァ", ["⠢", "⠡"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("クィ", ["⠢", "⠣"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("クェ", ["⠢", "⠫"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("クォ", ["⠢", "⠪"]) #2026/05/30 2026/06/08
         
-        self.append_special_braille_lettr_rules02("グァ", ["⠲", "⠡"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("グィ", ["⠲", "⠣"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("グェ", ["⠲", "⠫"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("グォ", ["⠲", "⠪"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("グァ", ["⠲", "⠡"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("グィ", ["⠲", "⠣"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("グェ", ["⠲", "⠫"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("グォ", ["⠲", "⠪"]) #2026/05/30 2026/06/08
         #シ系 / ス系 / ズ系
-        self.append_special_braille_lettr_rules02("シェ", ["⠈", "⠻"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ジェ", ["⠘", "⠻"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("スィ", ["⠈", "⠳"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ズィ", ["⠘", "⠳"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("シェ", ["⠈", "⠻"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ジェ", ["⠘", "⠻"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("スィ", ["⠈", "⠳"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ズィ", ["⠘", "⠳"]) #2026/05/30 2026/06/08
         #チ系
-        self.append_special_braille_lettr_rules02("チェ", ["⠈", "⠟"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("チェ", ["⠈", "⠟"]) #2026/05/30 2026/06/08
         #ツ系
-        self.append_special_braille_lettr_rules02("ツァ", ["⠢", "⠕"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ツィ", ["⠢", "⠗"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ツェ", ["⠢", "⠟"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ツォ", ["⠢", "⠞"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ツァ", ["⠢", "⠕"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ツィ", ["⠢", "⠗"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ツェ", ["⠢", "⠟"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ツォ", ["⠢", "⠞"]) #2026/05/30 2026/06/08
 
         #ティ系 / ディ系 / トゥ系 / ドゥ系
-        self.append_special_braille_lettr_rules02("ティ", ["⠈", "⠗"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ディ", ["⠘", "⠗"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("テュ", ["⠨", "⠝"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("デュ", ["⠸", "⠝"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("トゥ", ["⠢", "⠝"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ドゥ", ["⠲", "⠝"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ティ", ["⠈", "⠗"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ディ", ["⠘", "⠗"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("テュ", ["⠨", "⠝"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("デュ", ["⠸", "⠝"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("トゥ", ["⠢", "⠝"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ドゥ", ["⠲", "⠝"]) #2026/05/30 2026/06/08
 
         #ニェ系 / ヒェ系
-        self.append_special_braille_lettr_rules02("ニェ", ["⠈", "⠏"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヒェ", ["⠈", "⠯"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ニェ", ["⠈", "⠏"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ヒェ", ["⠈", "⠯"]) #2026/05/30 2026/06/08
 
         #F系
-        self.append_special_braille_lettr_rules02("ファ", ["⠢", "⠥"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("フィ", ["⠢", "⠧"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("フェ", ["⠢", "⠯"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("フォ", ["⠢", "⠮"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ファ", ["⠢", "⠥"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("フィ", ["⠢", "⠧"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("フェ", ["⠢", "⠯"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("フォ", ["⠢", "⠮"]) #2026/05/30 2026/06/08
 
-        self.append_special_braille_lettr_rules02("フュ", ["⠨", "⠬"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("フョ", ["⠨", "⠜"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("フュ", ["⠨", "⠬"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("フョ", ["⠨", "⠜"]) #2026/05/30 2026/06/08
 
         #V系
-        self.append_special_braille_lettr_rules02("ヴァ", ["⠲", "⠥"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヴィ", ["⠲", "⠧"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヴェ", ["⠲", "⠯"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヴォ", ["⠲", "⠮"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヴァ", ["⠲", "⠥"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ヴィ", ["⠲", "⠧"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ヴェ", ["⠲", "⠯"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ヴォ", ["⠲", "⠮"]) #2026/05/30 2026/06/08
 
-        self.append_special_braille_lettr_rules02("ヴュ", ["⠸", "⠭"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヴョ", ["⠸", "⠮"]) #2026/05/30
-        self.append_special_braille_lettr_rules02("ヴ",  ["⠐", "⠉"]) #2026/05/30
+        self.append_special_braille_lettr_rules_CJK("ヴュ", ["⠸", "⠭"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ヴョ", ["⠸", "⠮"]) #2026/05/30 2026/06/08
+        self.append_special_braille_lettr_rules_CJK("ヴ",  ["⠐", "⠉"]) #2026/05/30 2026/06/08
 
         # Katakana small vowels
-        self.append_special_braille_lettr_rules02("ァ", ["⠡"])
-        self.append_special_braille_lettr_rules02("ィ", ["⠣"])
-        self.append_special_braille_lettr_rules02("ゥ", ["⠩"])
-        self.append_special_braille_lettr_rules02("ェ", ["⠫"])
-        self.append_special_braille_lettr_rules02("ォ", ["⠹"])
+        self.append_special_braille_lettr_rules_CJK("ァ", ["⠡"])
+        self.append_special_braille_lettr_rules_CJK("ィ", ["⠣"])
+        self.append_special_braille_lettr_rules_CJK("ゥ", ["⠩"])
+        self.append_special_braille_lettr_rules_CJK("ェ", ["⠫"])
+        self.append_special_braille_lettr_rules_CJK("ォ", ["⠹"])
 
         # Katakana small ya/yu/yo
-        self.append_special_braille_lettr_rules02("ャ", ["⠈"])
-        self.append_special_braille_lettr_rules02("ュ", ["⠊"])
-        self.append_special_braille_lettr_rules02("ョ", ["⠌"])
+        self.append_special_braille_lettr_rules_CJK("ャ", ["⠈"])
+        self.append_special_braille_lettr_rules_CJK("ュ", ["⠊"])
+        self.append_special_braille_lettr_rules_CJK("ョ", ["⠌"])
 
         # カタカナ #促音
-        self.append_special_braille_lettr_rules02("ッ", ["⠐"])
+        self.append_special_braille_lettr_rules_CJK("ッ", ["⠂"]) #2026/06/08
 
         # romanji
-        self.append_braille_letter("a", ["⠁"])
-        self.append_braille_letter("b", ["⠃"])
-        self.append_braille_letter("c", ["⠉"])
-        self.append_braille_letter("d", ["⠙"])
-        self.append_braille_letter("e", ["⠑"])
-        self.append_braille_letter("f", ["⠋"])
-        self.append_braille_letter("g", ["⠛"])
-        self.append_braille_letter("h", ["⠓"])
-        self.append_braille_letter("i", ["⠊"])
-        self.append_braille_letter("j", ["⠚"])
-        self.append_braille_letter("k", ["⠅"])
-        self.append_braille_letter("l", ["⠇"])
-        self.append_braille_letter("m", ["⠍"])
-        self.append_braille_letter("n", ["⠝"])
-        self.append_braille_letter("o", ["⠕"])
-        self.append_braille_letter("p", ["⠏"])
-        self.append_braille_letter("q", ["⠟"])
-        self.append_braille_letter("r", ["⠗"])
-        self.append_braille_letter("s", ["⠎"])
-        self.append_braille_letter("t", ["⠞"])
-        self.append_braille_letter("u", ["⠥"])
-        self.append_braille_letter("v", ["⠧"])
-        self.append_braille_letter("w", ["⠺"]) 
-        self.append_braille_letter("x", ["⠭"])
-        self.append_braille_letter("y", ["⠽"])
-        self.append_braille_letter("z", ["⠵"])
+        self.append_special_braille_lettr_rules_CJK("外字", ["⠰"]) #2026/06/08 #Temporary
+        self.append_braille_letter("a", ["⠁"]) #2026/06/08
+        self.append_braille_letter("b", ["⠃"]) #2026/06/08
+        self.append_braille_letter("c", ["⠉"]) #2026/06/08
+        self.append_braille_letter("d", ["⠙"]) #2026/06/08
+        self.append_braille_letter("e", ["⠑"]) #2026/06/08
+        self.append_braille_letter("f", ["⠋"]) #2026/06/08
+        self.append_braille_letter("g", ["⠛"]) #2026/06/08
+        self.append_braille_letter("h", ["⠓"]) #2026/06/08
+        self.append_braille_letter("i", ["⠊"]) #2026/06/08
+        self.append_braille_letter("j", ["⠚"]) #2026/06/08
+        self.append_braille_letter("k", ["⠅"]) #2026/06/08
+        self.append_braille_letter("l", ["⠇"]) #2026/06/08
+        self.append_braille_letter("m", ["⠍"]) #2026/06/08
+        self.append_braille_letter("n", ["⠝"]) #2026/06/08
+        self.append_braille_letter("o", ["⠕"]) #2026/06/08
+        self.append_braille_letter("p", ["⠏"]) #2026/06/08
+        self.append_braille_letter("q", ["⠟"]) #2026/06/08
+        self.append_braille_letter("r", ["⠗"]) #2026/06/08
+        self.append_braille_letter("s", ["⠎"]) #2026/06/08
+        self.append_braille_letter("t", ["⠞"]) #2026/06/08
+        self.append_braille_letter("u", ["⠥"]) #2026/06/08
+        self.append_braille_letter("v", ["⠧"]) #2026/06/08
+        self.append_braille_letter("w", ["⠺"]) #2026/06/08
+        self.append_braille_letter("x", ["⠭"]) #2026/06/08
+        self.append_braille_letter("y", ["⠽"]) #2026/06/08
+        self.append_braille_letter("z", ["⠵"]) #2026/06/08
         
-        self.append_special_braille_lettr_rules01("A", ["⠁"])
-        self.append_special_braille_lettr_rules01("B", ["⠃"])
-        self.append_special_braille_lettr_rules01("C", ["⠉"])
-        self.append_special_braille_lettr_rules01("D", ["⠙"])
-        self.append_special_braille_lettr_rules01("E", ["⠑"])
-        self.append_special_braille_lettr_rules01("F", ["⠋"])
-        self.append_special_braille_lettr_rules01("G", ["⠛"])
-        self.append_special_braille_lettr_rules01("H", ["⠓"])
-        self.append_special_braille_lettr_rules01("I", ["⠊"])
-        self.append_special_braille_lettr_rules01("J", ["⠚"])
-        self.append_special_braille_lettr_rules01("K", ["⠅"])
-        self.append_special_braille_lettr_rules01("L", ["⠇"])
-        self.append_special_braille_lettr_rules01("M", ["⠍"])
-        self.append_special_braille_lettr_rules01("N", ["⠝"])
-        self.append_special_braille_lettr_rules01("O", ["⠕"])
-        self.append_special_braille_lettr_rules01("P", ["⠏"])
-        self.append_special_braille_lettr_rules01("Q", ["⠟"])
-        self.append_special_braille_lettr_rules01("R", ["⠗"])
-        self.append_special_braille_lettr_rules01("S", ["⠎"])
-        self.append_special_braille_lettr_rules01("T", ["⠞"])
-        self.append_special_braille_lettr_rules01("U", ["⠥"])
-        self.append_special_braille_lettr_rules01("V", ["⠧"])
-        self.append_special_braille_lettr_rules01("W", ["⠺"])
-        self.append_special_braille_lettr_rules01("X", ["⠭"])
-        self.append_special_braille_lettr_rules01("Y", ["⠽"])
-        self.append_special_braille_lettr_rules01("Z", ["⠵"])
+        self.append_special_braille_lettr_rules01("A", ["⠁"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("B", ["⠃"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("C", ["⠉"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("D", ["⠙"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("E", ["⠑"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("F", ["⠋"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("G", ["⠛"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("H", ["⠓"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("I", ["⠊"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("J", ["⠚"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("K", ["⠅"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("L", ["⠇"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("M", ["⠍"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("N", ["⠝"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("O", ["⠕"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("P", ["⠏"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("Q", ["⠟"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("R", ["⠗"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("S", ["⠎"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("T", ["⠞"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("U", ["⠥"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("V", ["⠧"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("W", ["⠺"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("X", ["⠭"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("Y", ["⠽"]) #2026/06/08
+        self.append_special_braille_lettr_rules01("Z", ["⠵"]) #2026/06/08
 
 
         #number
@@ -447,60 +451,57 @@ class BrailleBaseJapanese(BrailleBase):
 
 
         # Simb 符  号
-        self.append_braille_letter("。", ["⠲"]) #2026/05/18
-        self.append_braille_letter("、", ["⠰"]) #2026/05/18
-        self.append_braille_letter("？", ["⠢"]) #2026/05/18
-        self.append_braille_letter("！", ["⠖"]) #2026/05/18
-        self.append_braille_letter("・", ["⠐"]) #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("。", ["⠲", "⠀"]) #2026/05/18 #2026/06/14
+        self.append_special_braille_lettr_rules_CJK("、", ["⠰", "⠀"]) #2026/05/18 #2026/06/14
+        self.append_special_braille_lettr_rules_CJK("？", ["⠢", "⠀"]) #2026/05/18 #2026/06/14
+        self.append_special_braille_lettr_rules_CJK("！", ["⠖", "⠀"]) #2026/05/18 #2026/06/14
+        self.append_special_braille_lettr_rules_CJK("・", ["⠐", "⠀"]) #2026/05/18 #2026/06/14
+        self.append_special_braille_lettr_rules_CJK(":", ["⠐", "⠂", "⠀"]) #2026/05/31  #2026/06/08 #2026/06/14
         #International
-        self.append_braille_letter("?", ["⠢"]) #2026/05/18
-        self.append_braille_letter("!", ["⠖"]) #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("?", ["⠢", "⠀"]) #2026/05/18
+        self.append_special_braille_lettr_rules_CJK("!", ["⠖", "⠀"]) #2026/05/18
 
         #棒線 / 点線
-        self.append_braille_letter("―", ["⠒","⠒"]) #2026/05/31
-        self.append_braille_letter("…", ["⠂","⠂","⠂"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("―", ["⠒","⠒"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("…", ["⠂","⠂","⠂"]) #2026/05/31
 
         #第１カギ / ふたえカギ / 波線 / 第１カッコ / 二重カッコ
-        self.append_braille_letter("「", ["⠰", "⠄"]) #2026/05/31
-        self.append_braille_letter("」", ["⠠", "⠆"]) #2026/05/31
-        self.append_braille_letter("『", ["⠰", "⠤"]) #2026/05/31
-        self.append_braille_letter("』", ["⠤", "⠆"]) #2026/05/31
-        self.append_braille_letter("～", ["⠤", "⠤"]) #2026/05/31
-        self.append_braille_letter("(", ["⠐", "⠶"]) #2026/05/31
-        self.append_braille_letter(")", ["⠶", "⠂"]) #2026/05/31
-        self.append_braille_letter("((", ["⠰", "⠶"]) #2026/05/31
-        self.append_braille_letter("))", ["⠶", "⠆"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("「", ["⠰", "⠄"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("」", ["⠠", "⠆"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("『", ["⠰", "⠤"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("』", ["⠤", "⠆"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("～", ["⠤", "⠤"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("(", ["⠐", "⠶"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK(")", ["⠶", "⠂"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("((", ["⠰", "⠶"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("))", ["⠶", "⠆"]) #2026/05/31
         #right / left
-        self.append_braille_letter("→", ["⠒", "⠒", "⠕"]) #2026/05/31
-        self.append_braille_letter("←", ["⠪", "⠒", "⠒"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("→", ["⠒", "⠒", "⠕"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("←", ["⠪", "⠒", "⠒"]) #2026/05/31
         #○ / △ / □ / ×
-        self.append_braille_letter("○", ["⠐", "⠵"]) #2026/05/31
-        self.append_braille_letter("△", ["⠐", "⠷"]) #2026/05/31
-        self.append_braille_letter("□", ["⠐", "⠽"]) #2026/05/31
-        self.append_braille_letter("×", ["⠐", "⠿"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("○", ["⠐", "⠵"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("△", ["⠐", "⠷"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("□", ["⠐", "⠽"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("×", ["⠐", "⠿"]) #2026/05/31
 
-        self.append_braille_letter("％", ["⠰", "⠏"]) #2026/05/31
-        self.append_braille_letter("＆", ["⠰", "⠯"]) #2026/05/31
-        self.append_braille_letter("＠", ["⠰", "⠪"]) #2026/05/31
-        self.append_braille_letter("＃", ["⠰", "⠩"]) #2026/05/31
-        self.append_braille_letter("＊", ["⠰", "⠡"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("％", ["⠰", "⠏"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("   ", ["⠰", "⠯"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("＠", ["⠰", "⠪"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("＃", ["⠰", "⠩"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("＊", ["⠰", "⠡"]) #2026/05/31
 
-        self.append_braille_letter("@", ["⠪"]) #2026/05/31
-        self.append_braille_letter("-", ["⠤"]) #2026/05/31
-        self.append_braille_letter(".", ["⠲"]) #2026/05/31
-        self.append_braille_letter("/", ["⠌"]) #2026/05/31
-        self.append_braille_letter(":", ["⠐", "⠂"]) #2026/05/31
-        self.append_braille_letter("_", ["⠐", "⠤"]) #2026/05/31
-        self.append_braille_letter("~", ["⠐", "⠉"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("@", ["⠪"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("-", ["⠤"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK(".", ["⠲"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK(",", ["⠂"]) #2026/06/08
+        self.append_special_braille_lettr_rules_CJK("/", ["⠌"]) #2026/05/31 
+        self.append_special_braille_lettr_rules_CJK(";", ["⠆"]) #2026/06/08
+        self.append_special_braille_lettr_rules_CJK("'", ["⠄"]) #2026/06/08
 
-        self.append_braille_letter("%", ["⠰", "⠏"])
-        self.append_braille_letter("&", ["⠰", "⠯"])
-        self.append_braille_letter("#", ["⠰", "⠩"])
-        self.append_braille_letter("*", ["⠰", "⠡"])
+        self.append_special_braille_lettr_rules_CJK("_", ["⠐", "⠤"]) #2026/05/31
+        self.append_special_braille_lettr_rules_CJK("~", ["⠐", "⠉"]) #2026/05/31
 
-
-
-
-#TEST
-#bb = BrailleBaseJapanese()
-#print(bb.output_braille_txt("こんにちは！にほんのアニメやゲームは、せかいじゅうでとてもにんきがありますね。こんにちは！にほんのアニメやゲームは、せかいじゅうでとてもにんきがありますね。こんにちは！にほんのアニメやゲームは、せかいじゅうでとてもにんきがありますね。こんにちは！にほんのアニメやゲームは、せかいじゅうでとてもにんきがありますね。"))
+        self.append_special_braille_lettr_rules_CJK("%", ["⠰", "⠏"])
+        self.append_special_braille_lettr_rules_CJK("&", ["⠈", "⠯"]) #2026/06/08
+        self.append_special_braille_lettr_rules_CJK("#", ["⠰", "⠩"])
+        self.append_special_braille_lettr_rules_CJK("*", ["⠰", "⠡"])
