@@ -1,4 +1,7 @@
 
+## 2026/06/22 — Version 0.0.8 Summary
+- braillebase 0.0.14
+
 ## 2026/06/14 — Version 0.0.7 Summary
 - braillebase 0.0.13
 - Modularization and Isolation of the CJK Block: Segregated the processing pipeline for CJK languages (Chinese, Japanese, and Korean).
