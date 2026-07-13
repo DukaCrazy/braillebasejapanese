@@ -1,5 +1,9 @@
 
-## 2026/06/22 — Version 0.0.9 Summary
+## 2026/07/13 - Version 0.1.1 Summary
+- Addition of the base reverse Braille.
+- Definition of the base architecture.
+
+## 2026/06/23 — Version 0.0.9 Summary
 - braillebase 0.0.15
 
 ## 2026/06/22 — Version 0.0.8 Summary
