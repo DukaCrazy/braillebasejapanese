@@ -21,3 +21,9 @@
 - For collaborating as an authentic development partner, assisting in architecture refining, code portability across platforms, and documentation review.
 ### Nagao Yuji
 - For creating and maintaining BrailleBase, designing its architecture, and developing its core features with a focus on accessibility and education.
+
+### Font Base
+        https://www.mhlw.go.jp/tenji/index.html
+        https://www.nittento.or.jp/images/pdf/information/braille_lists.pdf
+        https://www.hokuten.com/document_gojuon.html#mark3
+        
