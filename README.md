@@ -1,4 +1,21 @@
+### - pip install braillebasejapanese
 
+# Japanese
+### We believe that the translation generated in this test is 100% correct.
+"単純な点字と複雑な点字の両方に対応できるライブラリが開発されました 2026年。"
+
+```python
+from braille import *
+
+bb = bbj()
+print(bb.output_braille_txt("たんじゅんな てんじ と ふくざつな てんじ の りょうほう に たいおう できる らいぶらり が かいはつ されました 2026ねん 。"))
+```
+Output: ⠕⠴⠘⠹⠴⠅⠀⠟⠴⠐⠳⠀⠞⠀⠭⠩⠐⠱⠝⠅⠀⠟⠴⠐⠳⠀⠎⠀⠈⠚⠉⠮⠉⠀⠇⠀⠕⠃⠊⠉⠀⠐⠟⠣⠙⠀⠑⠃⠐⠭⠑⠓⠀⠐⠡⠀⠡⠃⠥⠝⠀⠱⠛⠵⠳⠕⠀⠼⠃⠚⠃⠋⠏⠴⠀⠲⠀
+
+# Announcement
+- This package is part of an ecosystem called Braille Base. This name does not represent a company or business; it is an independent initiative aimed at providing registered braille tables for all of humanity.
+
+- We constantly need help to register, update, and validate braille tables. There is still no official contact channel, but you can find new information on the blog braillebase.blogspot.com or brailletable.blogspot.com.
 
 ## Pre-registered Letters and Characters
 - あ, い, う, え, お, か, き, く, け, こ, さ, し, す, せ, そ, た, ち, つ, て, と, な, に, ぬ, ね, の, は, ひ, ふ, へ, ほ, ま, み, む, め, も, や, ゆ, よ, ら, り, る, れ, ろ, わ, ゐ, ゑ, を, ん
@@ -20,3 +37,7 @@
 - ッ
 
 - 。, 、, ？, ！, ・, ?, !, ―, …, 「, 」, 『, 』, ～, (, ), ((, )), →, ←, ○, △, □, ×, ％, ＆, ＠, ＃, ＊, @, -, ., /, :, _, ~
+
+## Special: Greek Number
+- [Α] ,[Β] ,[Γ] ,[Δ] ,[Ε] ,[Ζ] ,[Η] ,[Θ] ,[Ι] ,[Κ] ,[Λ] ,[Μ] ,[Ν] ,[Ξ] ,[Ο] ,[Π] ,[Ρ] ,[Σ] ,[Τ] ,[Υ] ,[Φ] ,[Χ] ,[Ψ] ,[Ω];
+- [α] ,[β] ,[γ] ,[δ] ,[ε] ,[ζ] ,[η] ,[θ] ,[ι] ,[κ] ,[λ] ,[μ] ,[ν] ,[ξ] ,[ο] ,[π] ,[ρ] ,[σ] ,[τ] ,[υ] ,[φ] ,[χ] ,[ψ] ,[ω] ,[ς];
