@@ -26,4 +26,5 @@
         https://www.mhlw.go.jp/tenji/index.html
         https://www.nittento.or.jp/images/pdf/information/braille_lists.pdf
         https://www.hokuten.com/document_gojuon.html#mark3
-        
+        https://www.edvisionservices.org/Formsupdated/PDFForms/UEB_chart_and_reference_guide.pdf
+        https://chinhphu.vn/default.aspx?pageid=27160&docid=198030
