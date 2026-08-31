@@ -1,4 +1,7 @@
 
+## 2026/08/31 - Version 0.2.7 Summary
+- braillebase 0.2.7
+
 ## 2026/08/11 - Version 0.1.6 Summary
 ### Added
 - Full implementation of the BrailleBaseOutput module, responsible for generating multiple output formats based on the data processed by braillebase.
