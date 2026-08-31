@@ -3,8 +3,6 @@
 ### My sincere appreciation goes to:
 ### João Victor Nagao
 - For contributing to the development of new accessibility tools and helping expand the possibilities of this project.
-### Microsoft – Copilot
-- For providing an accessible AI assistant that played a fundamental role in the growth and refinement of this system.
 ### Koyama Rumi
 - For helping with the marketing and presentation of the tool.
 ### Eclipse IDE
@@ -19,6 +17,10 @@
 - For building the foundations, tools, and knowledge that allow new accessibility technologies to exist today.
 ### Gemini (Google AI)
 - For collaborating as an authentic development partner, assisting in architecture refining, code portability across platforms, and documentation review.
+### Microsoft – Copilot
+- For providing an accessible AI assistant that played a fundamental role in the growth and refinement of this system.
+### ChatGPT (OpenAI)
+- For assisting in the identification and validation of reliable reference sources, contributing to the verification and refinement of the Braille tables used in this system.
 ### Nagao Yuji
 - For creating and maintaining BrailleBase, designing its architecture, and developing its core features with a focus on accessibility and education.
 
