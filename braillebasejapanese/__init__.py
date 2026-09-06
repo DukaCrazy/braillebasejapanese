@@ -7,7 +7,7 @@ class BrailleBaseJapanese(BrailleBase):
         """
         super().__init__()
         #ひ
-        self.setting_braille_rules_uppercase("⠠", "⠠") #2026/06/08
+        self.setting_braille_rules_uppercase("⠠","⠠⠠","⠠⠄") #2026/09/06
 
         self.append_braille_letter("あ", ["⠁"],2) #2026/05/18 #2026/05/18
         self.append_braille_letter("い", ["⠃"],2) #2026/05/18 #2026/05/18
